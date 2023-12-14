@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-k7iv
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/build-e2e-yhle-tenant/test-app-cian/devfile-sample-python-basic-k7iv@sha256:c5e3756ecae1b9ca9468eb75b4ce4ede425cf226bf3cc390aa3f620aac4cde59
+        name: my-python
+        resources: {}
+status: {}
